@@ -1,4 +1,4 @@
-var highscore = [0,0,0,0,0];
+var highscore = [88,0,0,0,0];
 var names = ["", "", "", "", ""];
 
 function snake()

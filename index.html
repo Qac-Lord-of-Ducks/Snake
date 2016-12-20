@@ -10,31 +10,31 @@
 	}
 	#scores{
 		float: right;
-		
 		color: white;
+		margin-right: 100px;
 	}
 	</style>
     <meta charset="UTF-8">
     <title>Snake Game</title>
 	<div id="game">
-    <script src="p5.js" type="text/javascript"></script>
-    <script src="p5.dom.js" type="text/javascript"></script>
-    <script src="p5.sound.js" type="text/javascript"></script>
+    <script src="../libaries/p5.js" type="text/javascript"></script>
+    <script src="../libaries/p5.dom.js" type="text/javascript"></script>
+    <script src="../libaries/p5.sound.js" type="text/javascript"></script>
     <script src="sketch.js" type="text/javascript"></script>
     <script src="snake.js" type="text/javascript"></script>
 	</div>
   </head>
   <body>
 	<div id="scores">
-		<h1>High Scores: </h1>
+		<h1>High Scores</h1>
 		<ol>
-			<li id="1st"></li>
+			<li id="1st">The Savage: 88</li>
 			<li id="2nd"></li>
 			<li id="3rd"></li>
 			<li id="4th"></li>
 			<li id="5th"></li>
 		</ol>
-		<h2>Current Score: </h2> <p id="cs">0</p>
+		<h1>Current Score</h1> <h1 id="cs">0</h1>
 	</div>
   </body>
 </html>

@@ -1,5 +1,5 @@
 var highscore = [88,0,0,0,0];
-var names = ["", "", "", "", ""];
+var names = ["", "", "", "", "The Savage"];
 
 function snake()
 {
@@ -95,11 +95,11 @@ function snake()
 		}
 		highscore[p] = score-1;
 		names[p] = window.prompt("NEW HIGHSCORE!! \n Enter your name","");
-		document.getElementById('5th').innerHTML = names[4] + ": " + highscore[4];
-		document.getElementById('4th').innerHTML = names[3] + ": " + highscore[3];
+		document.getElementById('5th').innerHTML = names[0] + ": " + highscore[4];
+		document.getElementById('4th').innerHTML = names[1] + ": " + highscore[3];
 		document.getElementById('3rd').innerHTML = names[2] + ": " + highscore[2];
-		document.getElementById('2nd').innerHTML = names[1] + ": " + highscore[1];
-		document.getElementById('1st').innerHTML = names[0] + ": " + highscore[0];
+		document.getElementById('2nd').innerHTML = names[3] + ": " + highscore[1];
+		document.getElementById('1st').innerHTML = names[4] + ": " + highscore[0];
 	}
 	
 	this.update = function()

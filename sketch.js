@@ -88,18 +88,18 @@ function snake()
 		}
 	}
 	this.addScore = function(p){
-		for(var a = highscore.length; a > 0; a--)
+		for(var a = 0; a < highscore.length; a++)
 		{
 			highscore[a] = highscore[a-1];
 			names[a] = names[a-1];
 		}
 		highscore[p] = score-1;
 		names[p] = window.prompt("NEW HIGHSCORE!! \n Enter your name","");
-		document.getElementById('5th').innerHTML = names[0] + ": " + highscore[4];
-		document.getElementById('4th').innerHTML = names[1] + ": " + highscore[3];
+		document.getElementById('5th').innerHTML = names[4] + ": " + highscore[4];
+		document.getElementById('4th').innerHTML = names[3] + ": " + highscore[3];
 		document.getElementById('3rd').innerHTML = names[2] + ": " + highscore[2];
-		document.getElementById('2nd').innerHTML = names[3] + ": " + highscore[1];
-		document.getElementById('1st').innerHTML = names[4] + ": " + highscore[0];
+		document.getElementById('2nd').innerHTML = names[1] + ": " + highscore[1];
+		document.getElementById('1st').innerHTML = names[0] + ": " + highscore[0];
 	}
 	
 	this.update = function()
